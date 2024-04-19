@@ -26,8 +26,8 @@ hr
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    width: 80px;
     height: auto;
+    width: 80px;
 }
 
 #header
@@ -54,6 +54,7 @@ hr
 
 #connectedList
 {
+    right: 0;
     width: 10%;
     height: 100%;
     background-color: #292b2d;
@@ -68,6 +69,8 @@ hr
 
 #chatContainer
 {
+    display: flex;
+    flex-direction: column;
     background-color: #313338;
     overflow-y: hidden;
     width: 80%;
@@ -76,19 +79,18 @@ hr
 
 #chat
 {
-    height: 95%;
-    width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
     /*background-color: orange;*/
+    flex-grow: 1;
 }
 
 #messageInputContainer
 {
     display: flex;
     justify-content: center;
-    height: 5%;
     width: 100%;
+    margin-bottom: 10px;
     /*background-color: aqua;*/
 }
 
@@ -130,7 +132,7 @@ hr
     margin-top: 15px;
     border-radius: 7px;
     background-color: #383a40;
-    width: 98.7%;
+    width: 98.5%;
     height: 35px;
     display: flex;
     flex-direction:row;
@@ -264,4 +266,10 @@ a
 #creditsLink:hover
 {
     color: rgb(124, 122, 122);
+}
+
+#connectedUsersTitle
+{
+    margin-left: 5px;
+    font-size: calc(0.75em + 1vmin);
 }

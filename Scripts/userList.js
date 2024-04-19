@@ -31,5 +31,5 @@ function addNewUserToList(_username)
 
 function clearConnectedUsersList()
 {
-    connectedUsersListContainer.innerHTML = "<h2 style='margin-left: 5px;'>Connected users:</h2><p style='margin-left: 5px;'>Not connected to any server</p>";
+    connectedUsersListContainer.innerHTML = "<h2 id='connectedUsersTitle'>Connected users:</h2><p style='margin-left: 5px;'>Not connected to any server</p>";
 }
