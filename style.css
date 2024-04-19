@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html, body
+{
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+	overflow: hidden;
+}
+
+hr
+{
+    margin: 5px;
+    border: 1px solid #2b2d31;
+}
+
+#bodyContainer
+{
+    height: 100%;
+}
+
+#headerIcon
+{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: auto;
+}
+
+#header
+{
+    background-color: #2b2d31;
+    position: relative;
+    padding: 30px;
+}
+
+#headerTitle
+{
+    margin: 0;
+    text-align: center;
+}
+
+#channelsMenu
+{
+    width: 10%;
+    height: 100%;
+    background-color: #292b2d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#connectedList
+{
+    width: 10%;
+    height: 100%;
+    background-color: #292b2d;
+}
+
+#websiteContent
+{
+    display: flex;
+    flex-direction:row;
+    height: calc(100vh - 98px);
+}
+
+#chatContainer
+{
+    background-color: #313338;
+    overflow-y: hidden;
+    width: 80%;
+    height: 100%;
+}
+
+#chat
+{
+    height: 95%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /*background-color: orange;*/
+}
+
+#messageInputContainer
+{
+    display: flex;
+    justify-content: center;
+    height: 5%;
+    width: 100%;
+    /*background-color: aqua;*/
+}
+
+#messagesContainer
+{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.message
+{
+    width: 1500px;
+    overflow-wrap: break-word;
+}
+
+#nickname
+{
+    display: block;
+}
+
+#messageContent
+{
+    display: block;
+    margin-left: 60px;
+    /*padding-top: 2px;*/
+}
+
+#avatar
+{
+    border-radius: 50%;
+    float: left;
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#messageInput
+{
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: #383a40;
+    width: 98.7%;
+    height: 35px;
+    display: flex;
+    flex-direction:row;
+}
+
+#messageInputInteractive
+{
+    margin-right: 12px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.interactiveInputMenuElement
+{
+    height: 24px;
+}
+
+.interactiveInputMenuElement:hover
+{
+    filter: brightness(115%);
+    animation: jello; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+#input_01
+{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 12pt;
+    flex-grow: 1;
+    height: 2rem;
+    resize: none;
+    line-height: 1.65rem;
+    font-family: "Rubik", sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px;
+}
+
+.channelContainer
+{
+    margin-left: 15px;
+    display: inline-block;
+    width: 8vw;
+    height: 28px;
+    font-size: 18px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#channelName
+{
+    margin: 0;
+    position: relative;
+    top: 14%;
+    -ms-transform: translateY(-14%);
+    transform: translateY(-14%);
+}
+
+.channelContainer:hover
+{
+    background-color: #383a40;
+    transition: 0.3s;
+}
+
+#channelListTitle
+{
+    margin-left: 5px;
+}
+
+#input_01:focus
+{
+    background: transparent;
+    border: none;
+    outline-width: 0;
+}
+
+.statusDot
+{
+    height: 15px;
+    width: 15px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#connectedUserContainer
+{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+::-webkit-scrollbar
+{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 10px 10px 10px #2b2d31; 
+    border-radius: 30px;
+}
+   
+::-webkit-scrollbar-thumb
+{
+    background: #1a1b1e; 
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-corner
+{
+    background-color: transparent;
+}
+
+a
+{
+    color: rgb(155, 150, 150);
+}
+
+#creditsLink
+{
+    position: absolute;
+    bottom: 0;
+    margin-left: 2px;
+    text-decoration: none;
+}
+
+#creditsLink:hover
+{
+    color: rgb(124, 122, 122);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebChat 1.0</title>
+    <link rel="icon" type="image/x-icon" href="Media/Images/WebsiteIcon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="modalBox.css">
+    <script src="Scripts/userList.js" defer></script>
+    <script src="Scripts/chat.js" defer></script>
+    <script src="Scripts/userSetup.js" defer></script>
+    <script src="Scripts/main.js" defer></script>
+    <script src="Scripts/emoji-button.js"></script>
+</head>
+<body>
+    <div id="modalBox" class="modal">
+        <div class="modalContent">
+          <span class="close" id="modalClose">&times;</span>
+          <h1 id="modalHeader">Connect to server 📡</h1>
+          <!--<span id="modalBoxTextContent"></span> -->
+          <table id='modalBoxTable'>
+            <tr><td><span><b>Username: </b></span></td></tr><tr><td><input type='text' id='usernameInput'></span></td></tr>
+            <tr><td><span><b>Avatar URL: </b></span></td></tr><tr><td><input type='text' id='avatarInput'></span></td></tr>
+            <tr><td><span><b>Server IP: </b> (e.g. 127.0.0.1:8888)</span></td></tr><tr><td><input type='text' id='ipInput'></span></td></tr>
+        </table>
+        <br><br><button id='modalBoxBtn'>Connect</button>
+        </div>
+      
+      </div>
+    <div id="bodyContainer">
+        <div id="header">
+            <img src="Media/Images/ChatIcon.png" id="headerIcon">
+            <h1 id="headerTitle">Click to connect</h1> <!-- Blank character needed because otherwise header would resize when text changed -->
+            <div></div>
+        </div>
+        <div id="websiteContent">
+            <div id="channelsMenu">
+                <br>
+                <div class="category">
+                    <span id="channelListTitle"><b>📝 Text channels</b></span><br>
+                    <div class="channelContainer">
+                        <span id="channelName"># Main</span><br>
+                    </div>
+                    <!--<div class="channelContainer">
+                        <span id="channelName"># Main</span><br>
+                    </div>
+                    <div class="channelContainer">
+                        <span id="channelName"># Main</span><br>
+                    </div>
+                    <div class="channelContainer">
+                        <span id="channelName"># Main</span><br>
+                    </div>-->
+                    <br><br>
+
+                    <a href="credits.html" id="creditsLink" target="_blank">Credits</a>
+                </div>
+            </div>
+            <div id="chatContainer">
+                <div id="chat">
+                    <div id="messagesContainer">
+                        <!--<div class="message">
+                            <img src="Media/Images/profile.png" id="avatar">
+                            <span id="nickname"><b>John Travolta</b></span>
+                            <span id="messageContent">Witam.</span>
+                        </div>
+                        <br>
+                        <br> -->
+                    </div>
+                </div>
+                <!-- <hr> -->
+                <div id="messageInputContainer">
+                    <div id="messageInput">
+                        <textarea type="text" id="input_01"></textarea>
+                        <div id="messageInputInteractive">
+                            <img src="Media/Images/EmojiIcon.png" class="interactiveInputMenuElement" id="emojiButton">
+                            <img src="Media/Images/SendIcon.png" class="interactiveInputMenuElement" id="sendButton">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="connectedList">
+                <h2 style="margin-left: 5px;">Connected users:</h2>
+                <p style="margin-left: 5px;">Not connected to any server</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
