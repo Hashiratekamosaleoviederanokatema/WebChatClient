@@ -81,7 +81,6 @@ hr
 {
     overflow-y: scroll;
     overflow-x: hidden;
-    /*background-color: orange;*/
     flex-grow: 1;
 }
 
@@ -91,7 +90,6 @@ hr
     justify-content: center;
     width: 100%;
     margin-bottom: 10px;
-    /*background-color: aqua;*/
 }
 
 #messagesContainer
@@ -115,7 +113,6 @@ hr
 {
     display: block;
     margin-left: 60px;
-    /*padding-top: 2px;*/
 }
 
 #avatar
@@ -123,7 +120,7 @@ hr
     border-radius: 50%;
     float: left;
     width: 50px;
-    height: auto;
+    height: 50px;
     margin-right: 10px;
 }
 
@@ -155,8 +152,8 @@ hr
 .interactiveInputMenuElement:hover
 {
     filter: brightness(115%);
-    animation: jello; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1s; /* don't forget to set a duration! */
+    animation: jello;
+    animation-duration: 1s;
 }
 
 #input_01
